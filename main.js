@@ -78,6 +78,99 @@ saludarArrow = () => 'Hola Mundo!'
   console.log('Funcion resta flecha', restaArrow(10, 5));
   
   
+/**
+ * EJERCICIOS 
+ */
+
+ //Crea una función que reciba un número y devuelva el doble de ese número.
+
+
+
+  function dobleDelNumero(numero) {
+    return numero * 2;
+  }
+
+  resultadoDoble = dobleDelNumero(4);
+  resultadoDoble = dobleDelNumero(5);
+  resultadoDoble = dobleDelNumero(9);
+
+console.log(resultadoDoble);
+
+//   Crea una función que reciba un número y devuelva el cuadrado de ese número.
+
+
+function cuadradoDelNumero(numero2) {
+    return numero2 ** 2;
+  }
+
+const numeroAlCuadrado = cuadradoDelNumero(5);
+
+console.log(numeroAlCuadrado);
+
+//  Crea una función que calcule el área de un rectángulo y la muestre por consola.
+
+function areaDelRectangulo(base, altura) {
+    return base * altura;
+}
+
+let area = areaDelRectangulo(12, 4);
+
+console.log('El area del rectángulo es', area);
+
+//  Crea una función que reciba un número y muestre por consola si es par o impar.
+
+
+function detectarNumeroPar(numero) {
+    if (numero % 2 == 0); {
+        console.log('Es Par');
+    } 
+}
+
+detectarNumeroPar(248);
+
+function esPar(numero) {
+    return (numero % 2) == 0;
+}
+const numeroPar = esPar(346);
+console.log('Es numero par:', numeroPar);
+
+// Dado el siguiente array de personas:
+
+
+const personas = [
+
+    { nombre: 'Juan', edad: 18 },
   
+    { nombre: 'María', edad: 16 },
+  
+    { nombre: 'Pedro', edad: 20 },
+  
+    { nombre: 'Pablo', edad: 15 },
+  
+    { nombre: 'Laura', edad: 19 },
+  
+  ];
+  
+  //  Crea una función que reciba un array de personas y devuelva un array con las personas mayores de edad.
+ 
+  function mayoresDeEdad(array){
+    let mayores = [];
+
+    for(let i = 0; i < array.length; i++){
+        if(array[i].edad >= 18){
+            mayores.push(array[i])
+        }
+    }
+    return mayores;
+}
+
+console.log(mayoresDeEdad(personas));
+
+mayoresDeEdad(personas);
+
+
+
+
+
   
   
