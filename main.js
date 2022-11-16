@@ -168,9 +168,89 @@ console.log(mayoresDeEdad(personas));
 
 mayoresDeEdad(personas);
 
+// Dime cual es la persona más joven del array.
+
+function masJoven(personas) {
+  let masJoven = personas[0];
+  for (let i = 1; i < personas.length; i++) {
+    if (personas[i].edad < masJoven.edad) {
+      masJoven = personas[i];
+    }
+  }
+  return masJoven;
+}
+
+console.log(masJoven(personas));
+
+/**
+ *  Recuerdas el ejercicio de los pokemons? Ahora vamos a crear una función que reciba un array de pokemons y muestre por consola el nombre de cada pokemon.
+ */
+
+ const pokemons = [
+  {
+    nombre: 'Squirtle',
+    tipo: 'agua',
+  },
+  {
+    nombre: 'Bulbasaur',
+    tipo: 'planta',
+  },
+  {
+    nombre: 'Charmander',
+    tipo: 'fuego',
+  },
+];
+
+function mostrarPokemons(pokemons) {
+  for (const pokemon of pokemons) {
+    console.log(pokemon.nombre);
+  }
+}
+
+mostrarPokemons(pokemons);
 
 
+// Otra del mismo estilo
+
+const alumnos = [
+  {
+    nombre: 'Sergio',
+    edad: 25 ,
+  },
+  {
+    nombre: 'Pablo',
+    edad: 27,
+  },
+  {
+    nombre: 'Oscar',
+    edad: 28,
+  },
+];
+
+function mostrarAlumnos(alumnos) {
+  for (const alumno of alumnos) {
+    console.log(alumno.nombre);
+  }
+}
+
+mostrarAlumnos(alumnos);
+
+
+// También vamos a crear una función que reciba un array 
+// de pokemons y muestre por consola el nombre de cada pokemon 
+// que sea de tipo fuego.
 
 
   
+  function mostrarPokemonDeFuego(pokemons) {
+    for (const pokemon of pokemons) {
+      if (pokemon.tipo === 'fuego') {
+        console.log(pokemon.nombre);
+        
+      }
+    }
+  }
+
+  mostrarPokemonDeFuego(pokemons);
+
   
