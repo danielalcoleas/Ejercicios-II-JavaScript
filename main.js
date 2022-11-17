@@ -253,4 +253,81 @@ mostrarAlumnos(alumnos);
 
   mostrarPokemonDeFuego(pokemons);
 
-  
+  /**
+ * Haz los ejercicios anteriores con funciones flecha.
+ */
+
+// Crea una función que reciba un número y devuelva el doble de ese número.
+
+const dobleDelNumero2 = (numero) => numero * 2;
+
+console.log(dobleDelNumero2(5));
+
+// Crea una función que reciba un número y devuelva 
+//el cuadrado de ese número.
+
+const cuadradoDelNumero2 = (numero) => numero ** 2;
+
+console.log(cuadradoDelNumero2(8));
+
+// Crea una función que calcule el área de un rectángulo 
+//y la muestre por consola.
+
+const areaDelRectangulo2 = (base, altura) => base * altura;
+
+console.log(areaDelRectangulo2(16, 10));
+
+// Crea una función que reciba un número y muestre por consola 
+//si es par o impar.
+
+const numeroPar2 = (numero) => numero % 2 ===  0 ? 'par' : 'impar';
+
+console.log(numeroPar2(7));
+console.log(numeroPar2(12));
+
+// Crea una función que reciba un array de personas y devuelva un array con las personas 
+//mayores de edad 
+
+const personas2 = [
+  { nombre: 'Juan', edad: 18 },
+
+  { nombre: 'María', edad: 16 },
+
+  { nombre: 'Pedro', edad: 20 },
+
+  { nombre: 'Pablo', edad: 15 },
+
+  { nombre: 'Laura', edad: 19 },
+];
+
+const mayoresDeEdad2 = (personas2) => 
+  personas2.filter((persona) => persona.edad >= 18);
+
+  console.log(mayoresDeEdad2(personas2));
+
+  // Dime cual es la persona más joven del array
+
+//   const masJoven = (personas) => 
+//     personas.reduce(personaAnterior, personaActual) =>
+//       personaAnterior.edad < personaActual.edad ? personaAnterior : personaActual
+
+// console.log(masJoven(personas));
+
+const masJoven2 = (personas) =>
+  personas.reduce((personaAnterior, personaActual) =>
+    personaAnterior.edad < personaActual.edad ? personaAnterior : personaActual
+  );
+
+console.log(masJoven2(personas));
+
+// Dime cual es la persona más vieja del array
+
+const masViejo2 = (personas) =>
+    personas.reduce((personaAnterior, personaActual) =>
+      personaAnterior.edad > personaActual.edad ? personaAnterior : personaActual
+);
+
+console.log(masViejo2(personas));
+
+
+
